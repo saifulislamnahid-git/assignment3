@@ -1,5 +1,3 @@
-
-
 //kilometer to meter calculator
 function kilometerToMeter(km) {
     if (km >= 0) {
@@ -17,11 +15,10 @@ function budgetCalculator(clock, phone, laptop) {
         var clockPrice = clock * 50;
         var phonePrice = phone * 100;
         var laptopPrice = laptop * 500;
-
         var totalPrice = clockPrice + phonePrice + laptopPrice;
         return totalPrice;
     } else {
-        return "Please input a valid value"
+        return "Please input a valid value";
     }
 }
 var result = budgetCalculator(0, 2, 3);
@@ -44,27 +41,25 @@ function hotelCost(day) {
             var thirdPackage = remaining * 50;
             cost = firstPackage + secondPackage + thirdPackage;
         }
-
         return cost;
-    }else{
-        return "Please enter a valid value"
+    } else {
+        return "Please enter a valid value";
     }
 }
 var result = hotelCost(45);
 
 //mega friend largest name
-function megaFriend(friendsList){
+function megaFriend(friendsList) {
     var nameLength = friendsList[0].length;
-    var longestName = friendsList[0]
-
-    for(var i=1; i<friendsList.length; i++){
+    var longestName = friendsList[0];
+    for (var i = 1; i < friendsList.length; i++) {
         var nameElement = friendsList[i].length;
-        if(nameElement>nameLength){
+        if (nameElement > nameLength) {
             longestName = friendsList[i];
             nameLength = nameElement;
         }
     }
     return longestName;
 }
-var friends = ["Anas","Emon","Nayeem","Shakil","Rayhan","Sani","Rifat"];
+var friends = ["Anas", "Emon", "Nayeem", "Shakil", "Rayhan", "Sani", "Rifat"];
 var result = megaFriend(friends)
